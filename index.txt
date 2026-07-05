@@ -1,0 +1,71 @@
+1:"$Sreact.fragment"
+3:I[7558,["445","static/chunks/445-01842cdd56c551ec.js","619","static/chunks/619-3ba632d834111881.js","864","static/chunks/864-a4ebbb7a4161d1b6.js","177","static/chunks/app/layout-c4f8ab4542ee5ed9.js"],"ThemeProvider"]
+4:I[611,["445","static/chunks/445-01842cdd56c551ec.js","619","static/chunks/619-3ba632d834111881.js","864","static/chunks/864-a4ebbb7a4161d1b6.js","177","static/chunks/app/layout-c4f8ab4542ee5ed9.js"],"LocaleProvider"]
+5:I[552,["445","static/chunks/445-01842cdd56c551ec.js","619","static/chunks/619-3ba632d834111881.js","864","static/chunks/864-a4ebbb7a4161d1b6.js","177","static/chunks/app/layout-c4f8ab4542ee5ed9.js"],"default"]
+a:I[7150,[],""]
+:HL["/_next/static/css/0e811f939f193130.css","style"]
+2:T5d7,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"se_0k83ePhPokECstlzM0","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0e811f939f193130.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Wen Zuo","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"论文","type":"page","target":"publications","href":"/publications"},{"title":"简历","type":"page","target":"cv","href":"/cv"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"CV","type":"page","target":"cv","href":"/cv"}]},"siteTitleByLocale":{"zh":"左文","en":"Wen Zuo"}}],"$L6","$L7"]}]}]}]]}]]}],{"children":["__PAGE__","$L8",{},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"s":false,"S":true}
+b:I[9766,[],""]
+c:I[8924,[],""]
+d:I[7923,["445","static/chunks/445-01842cdd56c551ec.js","619","static/chunks/619-3ba632d834111881.js","864","static/chunks/864-a4ebbb7a4161d1b6.js","177","static/chunks/app/layout-c4f8ab4542ee5ed9.js"],"default"]
+e:I[344,["445","static/chunks/445-01842cdd56c551ec.js","557","static/chunks/557-95e32c1d43fa68dd.js","619","static/chunks/619-3ba632d834111881.js","681","static/chunks/681-1924e5bfb44909c4.js","974","static/chunks/app/page-c5b4be78c521d2c1.js"],"default"]
+f:I[4431,[],"OutletBoundary"]
+11:I[5278,[],"AsyncMetadataOutlet"]
+13:I[4431,[],"ViewportBoundary"]
+15:I[4431,[],"MetadataBoundary"]
+16:"$Sreact.suspense"
+6:["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+7:["$","$Ld",null,{"lastUpdated":"July 5, 2026","lastUpdatedByLocale":{"zh":"2026年7月5日","en":"July 5, 2026"},"defaultLocale":"en"}]
+8:["$","$1","c",{"children":[["$","$Le",null,{"dataByLocale":{"zh":{"author":{"name":"左文","title":"OTN工程师","institution":"北京邮电大学","avatar":"/bio.jpg"},"social":{"email":"chnzuowen@163.com","location":"Beijing, China","location_url":"https://maps.app.goo.gl/7a4zEEjEQCndA6Ud6","location_details":["Tongzhou, Beijing, China"],"google_scholar":"https://scholar.google.com/citations?user=eVkbKWcAAAAJ","orcid":"https://orcid.org/0000-0002-2821-441X","github":"https://github.com/invinspace","linkedin":"https://linkedin.com"},"features":{"enable_likes":true,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["光通信","分布式光纤传感","光纤系统"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"bio.md","title":"关于我","content":"我是一名OTN工程师，就职于中兴通讯，于 2025 年获得北京邮电大学信息与通信工程博士学位。\n\n我的研究方向为光通信与分布式光纤传感。\n"},{"id":"featured_publications","type":"publications","title":"papers","filter":"selected","limit":5,"publications":[]},{"id":"news","type":"list","title":"动态","source":"news.toml","items":[{"date":"2025-07","content":"加入中兴通讯，担任OTN工程师。🎉"},{"date":"2025-06","content":"毕业于BUPT，获工学博士学位。🎉"}]}]}]},"en":{"author":{"name":"Wen Zuo","title":"OTN Engineer","institution":"Beijing University of Posts and Telecommunications","avatar":"/bio.jpg"},"social":{"email":"chnzuowen@163.com","location":"Beijing, China","location_url":"https://maps.app.goo.gl/7a4zEEjEQCndA6Ud6","location_details":["Tongzhou, Beijing, China"],"google_scholar":"https://scholar.google.com/citations?user=eVkbKWcAAAAJ","orcid":"https://orcid.org/0000-0002-2821-441X","github":"https://github.com/invinspace","linkedin":"https://linkedin.com"},"features":{"enable_likes":true,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["Optical Communications","Distributed Fiber Optic Sensing","Fiber Optic Systems"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"bio.md","title":"About Me","content":"I am an OTN Engineer at ZTE, having received my PhD in Information and Communication Engineering from Beijing University of Posts and Telecommunications in 2025.\n\nMy research focuses on optical communications and distributed fiber optic sensing.\n\n"},{"id":"featured_publications","type":"publications","title":"Selected Publications","filter":"selected","limit":5,"publications":[]},{"id":"news","type":"list","title":"News","source":"news.toml","items":[{"date":"2025-07","content":"Joined ZTE as an OTN Engineer.🎉"},{"date":"2025-06","content":"Earned a Ph.D. in Engineering from BUPT.🎉"}]}]}]}},"defaultLocale":"en"}],null,["$","$Lf",null,{"children":["$L10",["$","$L11",null,{"promise":"$@12"}]]}]]}]
+9:["$","$1","h",{"children":[null,[["$","$L13",null,{"children":"$L14"}],null],["$","$L15",null,{"children":["$","div",null,{"hidden":true,"children":["$","$16",null,{"fallback":null,"children":"$L17"}]}]}]]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:null
+18:I[622,[],"IconMark"]
+12:{"metadata":[["$","title","0",{"children":"Wen Zuo"}],["$","meta","1",{"name":"description","content":"OTN Engineer, PhD from Beijing University of Posts and Telecommunications."}],["$","meta","2",{"name":"author","content":"Wen Zuo"}],["$","meta","3",{"name":"keywords","content":"Wen Zuo,PhD,Research,Beijing University of Posts and Telecommunications"}],["$","meta","4",{"name":"creator","content":"Wen Zuo"}],["$","meta","5",{"name":"publisher","content":"Wen Zuo"}],["$","meta","6",{"property":"og:title","content":"Wen Zuo"}],["$","meta","7",{"property":"og:description","content":"OTN Engineer, PhD from Beijing University of Posts and Telecommunications."}],["$","meta","8",{"property":"og:site_name","content":"Wen Zuo's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Wen Zuo"}],["$","meta","13",{"name":"twitter:description","content":"OTN Engineer, PhD from Beijing University of Posts and Telecommunications."}],["$","link","14",{"rel":"icon","href":"/favicon.svg"}],["$","$L18","15",{}]],"error":null,"digest":"$undefined"}
+17:"$12:metadata"
